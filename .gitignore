@@ -1,1 +1,79 @@
 node_modules
+# ==========================================
+# 1. NestJS & TypeScript Build Artifacts
+# ==========================================
+dist/
+build/
+*.tsbuildinfo
+
+# ==========================================
+# 2. Dependencies
+# ==========================================
+node_modules/
+
+# ==========================================
+# 3. Mobile Backend Environment & Secrets
+# ==========================================
+.env
+.env.production
+.env.development
+.env.local
+.env.*.local
+
+# ==========================================
+# 4. Database & ORM (Prisma / TypeORM / Postgres)
+# ==========================================
+# If using Prisma
+/prisma/migrations/**/*.sql.bak
+/prisma/dev.db
+/prisma/dev.db-journal
+
+# Local raw database storage folders
+pg-data/
+mysql-data/
+*.db
+*.sqlite
+
+# ==========================================
+# 5. Docker Containers
+# ==========================================
+.dockerignore
+# Exclude database volume dumps
+docker/volumes/
+
+# ==========================================
+# 6. Testing & Code Coverage
+# ==========================================
+/coverage
+/.nyc_output
+*.spec.js
+*.e2e-spec.js
+
+# ==========================================
+# 7. IDE, Editors, and OS Files
+# ==========================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# ==========================================
+# 8. Logs
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
